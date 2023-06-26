@@ -14,36 +14,36 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: const SafeArea(
+        body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: Sizes.size40),
+            padding: const EdgeInsets.symmetric(horizontal: Sizes.size40),
             child: Column(
               children: [
                 Gaps.v80,
-                Text("Login in To Tiktok",
+                const Text("Login in To Tiktok",
                     style: TextStyle(
                         fontSize: Sizes.size24, fontWeight: FontWeight.w700)),
                 Gaps.v20,
-                Text(
+                const Text(
                     "Create a profile, follow other accounts, make your own videos, and more.",
                     style: TextStyle(
                         fontSize: Sizes.size16, color: Colors.black45),
                     textAlign: TextAlign.center),
                 Gaps.v40,
                 AuthButton(
-                    icon: FaIcon(FontAwesomeIcons.user),
+                    icon: const FaIcon(FontAwesomeIcons.user),
                     text: "Use phone & email"),
                 Gaps.v16,
                 AuthButton(
                   text: "Continue with Apple",
-                  icon: FaIcon(FontAwesomeIcons.apple),
+                  icon: const FaIcon(FontAwesomeIcons.apple),
                 ),
               ],
             ),
           ),
         ),
         bottomNavigationBar: BottomAppBar(
-            color: Colors.grey.shade100,
+            color: Colors.grey.shade50,
             elevation: 2,
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: Sizes.size16),
