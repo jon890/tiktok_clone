@@ -79,8 +79,7 @@ class _BirthdayScreenState extends State<BirthdayScreen> {
                     borderSide: BorderSide(color: Colors.grey.shade400))),
           ),
           Gaps.v28,
-          GestureDetector(
-              onTap: _onNextTap, child: const FormButton(disabled: false))
+          GestureDetector(onTap: _onNextTap, child: FormButton(disabled: false))
         ]),
       ),
       bottomNavigationBar: BottomAppBar(
