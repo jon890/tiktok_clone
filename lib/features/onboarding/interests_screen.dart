@@ -52,7 +52,8 @@ class InterestsScreen extends StatelessWidget {
       appBar: AppBar(title: const Text("Choose your interests")),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(left: Sizes.size24, right: Sizes.size24, bottom: Sizes.size16),
+          padding: const EdgeInsets.only(
+              left: Sizes.size24, right: Sizes.size24, bottom: Sizes.size16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -107,7 +108,7 @@ class InterestsScreen extends StatelessWidget {
               right: Sizes.size24),
           child: Container(
               decoration: BoxDecoration(color: Theme.of(context).primaryColor),
-              // padding: EdgeInsets.symmetric(vertical: Sizes.size20),
+              padding: const EdgeInsets.symmetric(vertical: Sizes.size20),
               child: const Text('Next',
                   textAlign: TextAlign.center,
                   style:
