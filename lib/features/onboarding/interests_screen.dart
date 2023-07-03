@@ -97,6 +97,7 @@ class _InterestsScreenState extends State<InterestsScreen> {
               duration: const Duration(milliseconds: 300),
               child: const Text("Choose your interests"))),
       body: Scrollbar(
+        controller: _scrollController,
         child: SingleChildScrollView(
           controller: _scrollController,
           child: Padding(
