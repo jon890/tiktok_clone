@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:tiktok_clone/features/main_navigation/widgets/nav_tab.dart';
 
 class MainNavigationScreen extends StatefulWidget {
   const MainNavigationScreen({super.key});
@@ -28,22 +29,37 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: screens[_selectedIndex],
-        bottomNavigationBar: NavigationBar(
-          selectedIndex: _selectedIndex,
-          onDestinationSelected: _onTap,
-          labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
-          destinations: [
-            NavigationDestination(
-              icon: FaIcon(FontAwesomeIcons.house, color: Colors.teal),
-              label: "Home",
-            ),
-            NavigationDestination(
-              icon:
-                  FaIcon(FontAwesomeIcons.magnifyingGlass, color: Colors.amber),
-              label: "Search",
-            ),
-          ],
-        ));
+      bottomNavigationBar: BottomAppBar(
+          color: Colors.black,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              NavTab(
+                text: "Home",
+                isSelected: _selectedIndex == 0,
+                icon: FontAwesomeIcons.house,
+                onTap: () => _onTap(0),
+              ),
+              NavTab(
+                text: "Discover",
+                isSelected: _selectedIndex == 1,
+                icon: FontAwesomeIcons.magnifyingGlass,
+                onTap: () => _onTap(1),
+              ),
+              NavTab(
+                text: "Inbox",
+                isSelected: _selectedIndex == 3,
+                icon: FontAwesomeIcons.message,
+                onTap: () => _onTap(3),
+              ),
+              NavTab(
+                text: "Profile",
+                isSelected: _selectedIndex == 4,
+                icon: FontAwesomeIcons.user,
+                onTap: () => _onTap(4),
+              ),
+            ],
+          )),
+    );
   }
 }
