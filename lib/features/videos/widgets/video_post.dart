@@ -55,7 +55,8 @@ class _VideoPostState extends State<VideoPost>
   void _initVideoPlayer() async {
     await _videoPlayerController.initialize();
     _videoPlayerController.addListener(_onVideoChange);
-    _videoPlayerController.setVolume(0.0); // TODO 일시적으로 작업 중에는 volume을 0으로 처리
+    await _videoPlayerController.setLooping(true);
+    await _videoPlayerController.setVolume(0.0); // TODO 일시적으로 작업 중에는 volume을 0으로 처리
     setState(() {});
   }
 
