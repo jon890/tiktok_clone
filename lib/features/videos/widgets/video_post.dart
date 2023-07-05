@@ -138,11 +138,11 @@ class _VideoPostState extends State<VideoPost>
                 children: [
                   CircleAvatar(
                     radius: 25,
-                    child: Text("병태"),
                     backgroundColor: Colors.white,
                     foregroundColor: Colors.white,
                     foregroundImage: NetworkImage(
                         "https://avatars.githubusercontent.com/u/36876250?s=48&v=4"),
+                    child: Text("병태"),
                   ),
                   Gaps.v24,
                   VideoButton(icon: FontAwesomeIcons.solidHeart, text: "2.9M"),
