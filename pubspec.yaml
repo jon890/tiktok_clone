@@ -35,8 +35,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  font_awesome_flutter: 10.4.0 # TODO : 잘 안될 경우 10.3.0 버전으로 내리자
-  video_player: 2.7.0 # TODO : 강의에서는 2.4.10 버전 사용
+  font_awesome_flutter: 10.4.0 # 강의에서는 10.3.0 버전 사용ㅣ
+  video_player: 2.7.0 # 강의에서는 2.4.10 버전 사용
+  visibility_detector: 0.4.0+2 # 강의에서는 0.3.3 버전 사용
 
 dev_dependencies:
   flutter_test:
