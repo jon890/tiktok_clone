@@ -44,3 +44,4 @@ app.*.map.json
 /android/app/release
 
 /assets/videos/video.mov
+/assets/images/image1.jpeg

@@ -17,6 +17,9 @@ class TikTokApp extends StatelessWidget {
         theme: ThemeData(
             scaffoldBackgroundColor: Colors.white,
             primaryColor: const Color(0xFFE9435A),
+            textSelectionTheme: TextSelectionThemeData(
+              cursorColor: const Color(0xFFE9435A),
+            ),
             useMaterial3: true,
             appBarTheme: const AppBarTheme(
                 foregroundColor: Colors.black,
